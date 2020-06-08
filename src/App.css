@@ -1,0 +1,26 @@
+.top{
+  
+  border-bottom:1px solid black;
+}
+.nav-link{
+  color:white;
+}
+.navbar-brand{
+  color:white;
+}
+
+.navbar-brand:hover{
+  border-bottom:1px solid black;
+}
+li:hover{
+  color:black;
+  border-bottom:1px solid black;
+}
+nav{
+  background:transparent;
+}
+.load{
+  position: absolute;
+  top:40%;
+  left:50%;
+}
