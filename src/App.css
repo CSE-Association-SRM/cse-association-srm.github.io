@@ -1,8 +1,11 @@
 .top{
-  
+  margin-bottom: 2px;
   border-bottom:1px solid black;
 }
 .nav-link{
+  color:white;
+}
+.nav-link:hover{
   color:white;
 }
 .navbar-brand{
@@ -10,17 +13,60 @@
 }
 
 .navbar-brand:hover{
+  color:white;
   border-bottom:1px solid black;
 }
 li:hover{
   color:black;
   border-bottom:1px solid black;
 }
-nav{
-  background:transparent;
-}
+
 .load{
-  position: absolute;
+  position:fixed;
   top:40%;
   left:50%;
+}
+.page{
+  margin-bottom:15%;
+}
+.side {
+  margin-top:5%;
+  margin-bottom:5%;
+  border-left:3px ridge #0652DD;
+}
+.side-intro{
+  margin-top:10%;
+  border-left:3px ridge #0652DD;
+}
+.side:hover{
+  margin-left:none;
+}
+.side-1:hover{
+  
+  border-right:3px ridge #0652DD;
+  border-bottom:3px ridge #0652DD;
+}
+.hover:hover{
+  box-shadow:5px 10px skyblue;
+}
+.side1{
+  margin-top:5%;
+  margin-bottom:5%;
+  border-right:3px ridge #0652DD;
+}
+.hover1:hover{
+  box-shadow: 5px 10px skyblue;
+}
+.extra{
+  margin-bottom:5%;
+}
+.colour{
+  background-color: #00a8ff;
+}
+.footer{
+  background-color: #0652DD;
+  margin-top:7%;
+}
+.nice{
+  background-color:#0652DD ;
 }
