@@ -1,0 +1,207 @@
+{
+    "events":[
+        {
+            "id":0,
+            "name":"CSE Freshers'18 Party",
+            "image":"#",
+            "category":"non-tech",
+            "upcoming":false,
+            "date":"24-01-2019",
+            "description":"lorem d bebcwebvbcwbeiwbecab",
+            "subEvents":[]
+        },
+        {
+            "id":1,
+            "name":"Ultron 3.0",
+            "image":"#",
+            "category":"tech/non-tech",
+            "upcoming":false,
+            "date":"28-03-2019",
+            "description":"lorem d bebcwebvbcwbeiwbecab",
+            "subEvents": [
+                {
+                    "id":0,
+                    "name":"Code Wars",
+                    "image":"#",
+                    "category":"tech",
+                    "upcoming":false,
+                    "date":"29-03-2019",
+                    "description":"lorem d bebcwebvbcwbeiwbecab"
+
+                },
+                {
+                    "id":1,
+                    "name":"Code Token",
+                    "image":"#",
+                    "category":"tech",
+                    "upcoming":false,
+                    "date":"30-03-2019",
+                    "description":"lorem d bebcwebvbcwbeiwbecab"
+
+                },
+                {
+                    "id":2,
+                    "name":"Suit Up",
+                    "image":"#",
+                    "category":"non-tech",
+                    "upcoming":false,
+                    "date":"29-03-2019",
+                    "description":"lorem d bebcwebvbcwbeiwbecab"
+
+                },
+                {
+                    "id":3,
+                    "name":"The Friday Night",
+                    "image":"#",
+                    "category":"non-tech",
+                    "upcoming":false,
+                    "date":"29-03-2019",
+                    "description":"lorem d bebcwebvbcwbeiwbecab"
+
+                },
+                {
+                    "id":4,
+                    "name":"Fantasy IPL",
+                    "image":"#",
+                    "category":"non-tech",
+                    "upcoming":false,
+                    "date":"30-03-2019",
+                    "description":"lorem d bebcwebvbcwbeiwbecab"
+
+                },
+                {
+                    "id":5,
+                    "name":"Prove me Wrong",
+                    "image":"#",
+                    "category":"non-tech",
+                    "upcoming":false,
+                    "date":"30-03-2019",
+                    "description":"lorem d bebcwebvbcwbeiwbecab"
+
+                },
+                {
+                    "id":6,
+                    "name":"InQuizitive",
+                    "image":"#",
+                    "category":"non-tech",
+                    "upcoming":false,
+                    "date":"31-03-2019",
+                    "description":"lorem d bebcwebvbcwbeiwbecab"
+
+                },
+                {
+                    "id":7,
+                    "name":"Ultron Gaming Event",
+                    "image":"#",
+                    "category":"Gaming",
+                    "upcoming":false,
+                    "date":"31-03-2019",
+                    "description":"lorem d bebcwebvbcwbeiwbecab"
+
+                },
+                {
+                    "id":8,
+                    "name":"Ultron Sports Event",
+                    "image":"#",
+                    "category":"Sports",
+                    "upcoming":false,
+                    "date":"30-03-2019",
+                    "description":"lorem d bebcwebvbcwbeiwbecab"
+
+                }
+            ]
+        },
+        {
+            "id":2,
+            "name":"CSE Freshers'19 Audition",
+            "image":"#",
+            "category":"non-tech",
+            "upcoming":false,
+            "date":"06-09-2019",
+            "description":"lorem d bebcwebvbcwbeiwbecab",
+            "subEvents":[]
+        },
+        {
+            "id":3,
+            "name":"CSE Freshers'19 Party",
+            "image":"#",
+            "category":"non-tech",
+            "upcoming":false,
+            "date":"11-10-2019",
+            "description":"lorem d bebcwebvbcwbeiwbecab",
+            "subEvents":[]
+        },
+        {
+            "id":4,
+            "name":"Game Blast 2020",
+            "image":"#",
+            "category":"Gaming",
+            "upcoming":false,
+            "date":"15-02-2020",
+            "description":"lorem d bebcwebvbcwbeiwbecab",
+            "subEvents":[]
+        },
+        {
+            "id":5,
+            "name":"Career Guidence Webinar - by Mr. Vineet Khatri",
+            "image":"#",
+            "category":"non-tech",
+            "upcoming":false,
+            "date":"26-05-2020",
+            "description":"lorem d bebcwebvbcwbeiwbecab",
+            "subEvents":[]
+        },
+        {
+            "id":6,
+            "name":"COVID-19 webinar with IAS A.S.Bains",
+            "image":"#",
+            "category":"non-tech",
+            "upcoming":false,
+            "date":"27-05-2020",
+            "description":"lorem d bebcwebvbcwbeiwbecab",
+            "subEvents":[]
+        },
+        {
+            "id":7,
+            "name":"Deep Learning Workshop",
+            "image":"#",
+            "category":"tech",
+            "upcoming":false,
+            "date":"27-05-2020",
+            "description":"lorem d bebcwebvbcwbeiwbecab",
+            "subEvents":[]
+        },
+        {
+            "id":8,
+            "name":"Webinar- by IAS Officer Saket Maliviya",
+            "image":"#",
+            "category":"non-tech",
+            "upcoming":false,
+            "date":"30-05-2020",
+            "description":"lorem d bebcwebvbcwbeiwbecab",
+            "subEvents":[]
+        },
+        {
+            "id":9,
+            "name":"Deep Learning Workshop in association with Coding Blocks",
+            "image":"#",
+            "category":"tech",
+            "upcoming":false,
+            "date":"31-05-2020",
+            "description":"lorem d bebcwebvbcwbeiwbecab",
+            "subEvents":[]
+        },
+        {
+            "id":10,
+            "name":"Test Event for Upcoming Section",
+            "image":"#",
+            "category":"tech",
+            "upcoming":true,
+            "date":"31-06-2019",
+            "description":"lorem d bebcwebvbcwbeiwbecab hseyedjur eheiowa sg juejehey  eiwosjcbgr edk egtveeo chdidncvtbedococ  djsowmdbchyfbfiv cjdhdbcjmcodnmd dhdbdospxkxnc ",
+            "subEvents":[]
+        }
+        
+
+    ]
+}
