@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+
+.navbar-brand:hover{
+    color: white;
+}
+.navbar-brand{
+    position: absolute;
+    margin-top: 0%;
+}
+.icon{
+    padding-left: 5%;
+}
+.nav-link{
+    color: black;
+    width: 100%;
+}
+.nav-link:hover{
+    padding-bottom: 0px;
+    color: blue;
+}
+
+.nav-item:hover{
+    color: black;
+    
+    border-bottom: 3px solid blue;
+    
+}
+
+.nav-item{
+    text-align: center;
+    width: 120px;
+    margin-right: 0%;
+    letter-spacing: 2px;
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+}
+
+
+nav{
+    background-color: black;
+}
+
+span{
+    opacity: 1;
+}

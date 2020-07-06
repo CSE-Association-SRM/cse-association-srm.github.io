@@ -1,25 +1,53 @@
+
 .top{
   margin-bottom: 2px;
-  border-bottom:1px solid black;
 }
-.nav-link{
-  color:white;
-}
-.nav-link:hover{
-  color:white;
-}
+
+
 .navbar-brand{
   color:white;
 }
+.carousel_element{
+  position: absolute;
+  margin-left: 5%;
+}
 
-.navbar-brand:hover{
-  color:white;
-  border-bottom:1px solid black;
+.overlay1{
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: #e77f67;
+  opacity: .4;
 }
-li:hover{
-  color:black;
-  border-bottom:1px solid black;
+.overlay2{
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: #cd84f1;
+  opacity: .4;
 }
+.overlay3{
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: #2bcbba;
+  opacity: .4;
+}
+
+.carousel_text{
+  margin-top: 0%;
+  font-size: 100px;
+}
+.team_desc{
+  font-size: 20px;
+  margin-left: 5%;
+  margin-top: 15%;
+  font-weight: bolder;
+}
+
 
 .load{
   position:fixed;
@@ -63,10 +91,7 @@ li:hover{
 .colour{
   background-color: #00a8ff;
 }
-.footer{
-  background-color: #0652DD;
-  margin-top:7%;
-}
+
 .nice{
   background-color:#0652DD ;
 }

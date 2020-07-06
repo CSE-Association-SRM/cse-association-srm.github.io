@@ -4,6 +4,7 @@ import {Switch, Route ,Redirect,withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {fetchEvents} from '../redux/ActionCreators';
 import Events from '../Components/EventComponent';
+import '../App.css'
 const mapStateToProps=state=>{
     return{
         events:state.events
