@@ -5,6 +5,10 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
+.nav-list{
+    width: 60%;
+    margin-left: 18%;
+}
 .nav-link:hover{
     padding-bottom: none;
 }
@@ -27,9 +31,9 @@
     color: black;
 }
 .social_contact{
-    margin-top: 30%;
+    margin-top: 0%;
     margin-bottom: 10%;
-    margin-left: 30%;
+    margin-left: 60%;
     
 }
 .social_icon{
@@ -57,4 +61,37 @@ a:hover{
     font-weight: bolder;
     color: hsl(212, 17%, 69%);
     font-family: 'Ubuntu', sans-serif;
+}
+
+@media(max-width:768px){
+    .club_icon{
+        margin-top: 10%;
+        margin-left: 37.5%;
+    }
+    .navigation{
+        text-align: right;
+        top: 6%;
+    }
+    .nav-list{
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 18%;
+    }
+    .contact_us{
+        margin-top: 9%;
+    }
+    .social_contact{
+        position: relative;
+        margin-top: 0%;
+        margin-bottom: 50%;
+        margin-left: 0%;
+        left: 0%;
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        padding-bottom: 80%;
+    }
+    .social_icon{
+        margin-left: 0%;
+    }
 }

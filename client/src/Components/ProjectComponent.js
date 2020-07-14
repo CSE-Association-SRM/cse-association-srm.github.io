@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import Moment from 'react-moment';
 import Nav from './navigationComponent';
 import { fetchMediumBlogs, fetchGithubRepos } from '../redux/ActionCreators';
-import { Card } from 'react-bootstrap';
+import { Card,Badge } from 'react-bootstrap';
+import '../css/project.css'
 
 const ProjectComponent = ({
   medium: { loading, errMess, blogs },
@@ -21,8 +22,8 @@ const ProjectComponent = ({
     category.map(category => {
       return (
         <Fragment>
-          {' _ '}
-          {category}
+          {'  '}
+          <Badge color="primary" style={{backgroundColor: "#ff7f50",color: "white"}}>{category}</Badge>
         </Fragment>
       );
     });
@@ -33,22 +34,23 @@ const ProjectComponent = ({
     .map(blog => {
       const category = blog.categories;
       return (
-        <div key={blog.id} className='col-12 col-md-5'>
-          <Card className='my-3'>
-            <Card.Img src={blog.thumbnail} height='200' width='200' />
-            <Card.Body>
-              <Card.Title>
+        <div key={blog.id} className='col-sm-4' style={{marginLeft:"0%"}}>
+          <Card className='my-3' width="400" style={{marginLeft: "10%",boxShadow:" 0px 2px 20px 8px #f1f2f6"}}>
+            <Card.Img src={blog.thumbnail} height='200' width='100' />
+            <Card.Body style={{boxShadow:" 0px 2px 20px 8px #f1f2f6"}}>
+              <Card.Title style={{width: "100%"}}>
                 <h5>{blog.title}</h5>
               </Card.Title>
-              <Card.Subtitle>-by {blog.author}</Card.Subtitle>
+              <Card.Subtitle>{blog.author}</Card.Subtitle>
               <br />
               <Card.Subtitle>
                 {' '}
-                <p>Categories:{renderCategories(category)}</p>
+                {renderCategories(category)}
               </Card.Subtitle>
               <Card.Link href={blog.link} target='_blank'>
                 <strong>
-                  <i class='fab fa-medium'></i>visit this blog
+                  <br/>
+                  <i class='fab fa-medium fa-2x'></i>
                 </strong>
               </Card.Link>
             </Card.Body>
@@ -80,23 +82,21 @@ const ProjectComponent = ({
     return (
       <Fragment>
         <Nav />
-        <div className='jumbotron mt-5' style={{ background: 'transparent' }}>
-          <div className='row'>
-            <div class='col-12 col-md-8 offset-md-1'>
-              <h1>Our Projects and Blogs</h1>
+        <div class='intro mt-5' >
+          <div className='row' >
+            <div class='col-12'>
+              <h1 class="page_title" style={{textAlign:"center"}}><span style={{color:"blue"}}>P</span>rojects  ||  <span style={{color:"blue"}}>B</span>logs</h1>
             </div>
           </div>
           <div className='row'>
-            <div class='col-12 col-md-8 offset-md-1'>
-              <h6>
-                Here in CSEA, we are developing some awesome projects in Web
-                development and Machine Learning domain.We also write some
-                mindblowing blogs. Hurry, check them out{' '}
+            <div class='col-12'>
+              <h6 class="page_desc">
+                CSEA works towards working on projects that involve the latest technology and concepts{' '}
               </h6>
             </div>
           </div>
         </div>
-        <hr></hr>
+        
 
         <div>
           <h3>CSE-Association's Medium Publication</h3>

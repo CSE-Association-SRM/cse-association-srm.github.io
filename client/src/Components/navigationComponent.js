@@ -70,6 +70,11 @@ class Nav extends Component {
           </NavLink>
           <div class='collapse navbar-collapse' id='Navbar'>
             <ul class='navbar-nav ml-auto'>
+            <li class='nav-item active'>
+                <NavLink to='/home' class='nav-link '>
+                  <h6>Home</h6>
+                </NavLink>
+              </li>
               <li class='nav-item active'>
                 <NavLink to='/events' class='nav-link '>
                   <h6>Events</h6>
@@ -81,9 +86,9 @@ class Nav extends Component {
                 </NavLink>
               </li>
               <li class='nav-item'>
-                <a class='nav-link' href='#contact'>
+                <NavLink class='nav-link' to='/team'>
                   <h6>Our Team</h6>
-                </a>
+                </NavLink>
               </li>
               <li class='nav-item'>
                 <a class='nav-link' href='/'>
