@@ -1,0 +1,103 @@
+html {
+  scroll-behavior: smooth;
+}
+.top {
+  margin-bottom: 2px;
+}
+
+.navbar-brand {
+  color: white;
+}
+.carousel_element {
+  position: absolute;
+  margin-left: 5%;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: #e77f67;
+  opacity: 0.4;
+}
+.overlay2 {
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: #cd84f1;
+  opacity: 0.4;
+}
+.overlay3 {
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: #2bcbba;
+  opacity: 0.4;
+}
+
+.carousel_text {
+  margin-top: 0%;
+  font-size: 100px;
+}
+.team_desc {
+  font-size: 20px;
+  margin-left: 5%;
+  margin-top: 15%;
+  font-weight: bolder;
+}
+
+.load {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+}
+.page {
+  margin-bottom: 15%;
+}
+.side {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-left: 3px ridge #0652dd;
+}
+.side-intro {
+  margin-top: 10%;
+  border-left: 3px ridge #0652dd;
+}
+.side:hover {
+  margin-left: none;
+}
+.side-1:hover {
+  border-right: 3px ridge #0652dd;
+  border-bottom: 3px ridge #0652dd;
+}
+.hover:hover {
+  box-shadow: 5px 10px skyblue;
+}
+.side1 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-right: 3px ridge #0652dd;
+}
+.hover1:hover {
+  box-shadow: 5px 10px skyblue;
+}
+.extra {
+  margin-bottom: 5%;
+}
+.colour {
+  background-color: #00a8ff;
+}
+
+.nice {
+  background-color: #0652dd;
+}
+
+@media (max-width: 768px) {
+  .carousel_text {
+    margin-top: 0%;
+    font-size: 40px;
+  }
+}

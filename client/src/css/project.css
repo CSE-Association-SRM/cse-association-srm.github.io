@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+body {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+.intro {
+  background: url('/assets/bg3.png');
+  background-size: 100%;
+  background-position-y: 0%;
+  height: 300px;
+  width: 100%;
+  margin-top: 20%;
+}
+.page_title {
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  font-size: 60px;
+  margin-top: 8%;
+}
+.page_desc {
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    background: none;
+    background-size: 100%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: 100%;
+    height: 200px;
+    width: 100%;
+    margin-top: 0%;
+    top: 0%;
+  }
+  .page_title {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    margin-top: 10%;
+  }
+  .page_desc {
+    width: 90%;
+    margin-left: 5%;
+  }
+}

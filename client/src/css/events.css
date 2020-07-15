@@ -1,0 +1,144 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+.icon_envelope {
+  margin-left: 0%;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  background: url('/assets/bg3.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 18%;
+}
+
+.event_envelope {
+  margin-top: 50%;
+  margin-left: 10%;
+  height: 240px;
+  width: 200px;
+  box-shadow: 0px 2px 20px 8px #f1f2f6;
+  z-index: 999;
+}
+.event_envelope:hover {
+  animation: zoom 200ms forwards;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+.event_details {
+  height: 100%;
+  width: 100%;
+}
+.event_img {
+  margin-left: 29%;
+  margin-top: 20%;
+}
+.event_text {
+  text-align: center;
+  margin-top: 25%;
+}
+
+h5 {
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 2px;
+}
+h3 {
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 8%;
+}
+.upcoming_events_envelope {
+  width: 100%;
+  height: 100%;
+  background: #3d3d3d;
+  padding-bottom: 5%;
+}
+.carousel_envelope {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 2%;
+}
+#technical_events_envelope {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5%;
+  margin-top: 0%;
+  margin-left: 8%;
+  overflow: hidden;
+}
+.technical_event_title {
+  margin-left: -12%;
+  margin-top: -1%;
+}
+
+#non-technical_events_envelope {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5%;
+  margin-top: 0%;
+  margin-left: 8%;
+  overflow: hidden;
+}
+.non-technical_event_title {
+  margin-left: -12%;
+  margin-top: -1%;
+}
+
+@media (max-width: 768px) {
+  .icon_envelope {
+    display: none;
+  }
+  .upcoming_events_envelope {
+    margin-top: 0%;
+    width: 100%;
+    height: 100%;
+    background: #3d3d3d;
+    padding-bottom: 5%;
+  }
+  .carousel_envelope {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding-bottom: 10%;
+  }
+  #technical_events_envelope {
+    width: 90%;
+    height: 100%;
+    padding-bottom: 5%;
+    margin-top: 0%;
+    margin-left: 5%;
+    overflow: hidden;
+  }
+  .technical_event_title {
+    margin-left: -10px;
+    font-size: 25px;
+  }
+  #non-technical_events_envelope {
+    width: 90%;
+    height: 100%;
+    padding-bottom: 5%;
+    margin-top: 0%;
+    margin-left: 5%;
+    overflow: hidden;
+  }
+  .non-technical_event_title {
+    margin-left: -10px;
+    font-size: 25px;
+  }
+  hr {
+    width: 80%;
+    height: 5px;
+  }
+}

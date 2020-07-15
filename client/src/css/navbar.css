@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+html{
+    scroll-behavior: smooth;
+  }
+
+.navbar-brand:hover{
+    color: white;
+}
+.navbar-brand{
+    position: absolute;
+    margin-top: 0%;
+}
+.icon{
+    padding-left: 5%;
+}
+.nav-link{
+    color: black;
+    width: 100%;
+}
+.nav-link:hover{
+    padding-bottom: 0px;
+    color: blue;
+}
+
+.nav-item:hover{
+    color: black;
+    
+    border-bottom: 3px solid blue;
+    
+}
+
+.nav-item{
+    text-align: center;
+    width: 120px;
+    margin-right: 0%;
+    letter-spacing: 2px;
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+}
+
+
+nav{
+    background-color: black;
+}
+
+span{
+    opacity: 1;
+}
+
+@media(max-width:768px){
+    body{
+        overflow-x: hidden;
+
+    }
+   
+    .navbar-brand{
+        position: absolute;
+        display: none;
+        margin-top: 0%;
+    }
+    .collapse{
+        left: 0%;
+        margin-left: 0%;
+        text-align: left;
+        height: 40;
+        background-color: white;
+        width:100%;
+        overflow-x: hidden;
+        z-index: 9999;
+
+    }
+    .nav_link{
+        text-align: center;
+        margin-left: 40%;
+    }
+    
+    .nav-link:hover{
+        text-decoration: none;
+    }
+}

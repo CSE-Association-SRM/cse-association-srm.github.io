@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Ubuntu:wght@500&display=swap');
+.navigation {
+  text-align: right;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+html {
+  scroll-behavior: smooth;
+}
+.nav-list {
+  width: 60%;
+  margin-left: 18%;
+}
+.nav-link:hover {
+  padding-bottom: none;
+}
+
+.footer {
+  background-color: #3d3d3d;
+  margin-top: 7%;
+}
+.club_icon {
+  margin-left: 18%;
+  margin-top: 36%;
+}
+.btn {
+  background-color: #3d3d3d;
+  color: white;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+.social_contact {
+  margin-top: 0%;
+  margin-bottom: 10%;
+  margin-left: 80%;
+}
+.social_icon {
+  margin-right: 10%;
+}
+
+li {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: #a4b0be;
+}
+
+a {
+  color: #a4b0be;
+}
+a:hover {
+  text-decoration: none;
+  color: #cf6a87;
+}
+.contact_us {
+  text-align: left;
+  font-size: 10px;
+  font-weight: bolder;
+  color: hsl(212, 17%, 69%);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .club_icon {
+    margin-top: 10%;
+    margin-left: 37.5%;
+  }
+  .navigation {
+    text-align: right;
+    top: 6%;
+  }
+  .nav-list {
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 18%;
+  }
+  .contact_us {
+    margin-top: 9%;
+  }
+  .social_contact {
+    position: relative;
+    margin-top: 0%;
+    margin-bottom: 50%;
+    margin-left: 0%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    padding-bottom: 80%;
+  }
+  .social_icon {
+    margin-left: 0%;
+  }
+}
