@@ -27,6 +27,6 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server \" \"npm run client\""
   },
-  "author": "Shubham Deodhar",
+  "author": "Shubham Deodhar Nisarg Bijutkar",
   "license": "MIT"
 }
