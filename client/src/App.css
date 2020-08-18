@@ -37,6 +37,14 @@ html {
   background-color: #2bcbba;
   opacity: 0.4;
 }
+.overlay4 {
+  position: absolute;
+  top: 0%;
+  height: 60%;
+  width: 100%;
+  background-color: #2bcbba;
+  opacity: 0.4;
+}
 
 .carousel_text {
   margin-top: 0%;
@@ -99,5 +107,8 @@ html {
   .carousel_text {
     margin-top: 0%;
     font-size: 40px;
+  }
+  .sponsors{
+    margin-left: 30%
   }
 }

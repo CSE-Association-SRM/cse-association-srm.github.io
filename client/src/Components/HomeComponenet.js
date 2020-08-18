@@ -8,6 +8,7 @@ import Nav from './navigationComponent';
 import Footer from './footerComponent';
 import { NavLink } from 'react-router-dom';
 import Contact from './ContactComponent';
+import Sponsors from './SponsorsComponent'
 class HomeNav extends Component {
   render() {
     if (this.props.loading) {
@@ -23,7 +24,8 @@ class HomeNav extends Component {
           <Nav />
           <Intro />
           <Work event={this.props.events.filter(event => event.upcoming)[0]} />
-          <Contact />
+          <Sponsors/>
+          <Contact/>
           <Footer />
         </>
       );

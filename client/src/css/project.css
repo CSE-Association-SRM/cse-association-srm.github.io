@@ -6,7 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 .intro {
-  background: url('/assets/bg3.png');
   background-size: 100%;
   background-position-y: 0%;
   height: 300px;

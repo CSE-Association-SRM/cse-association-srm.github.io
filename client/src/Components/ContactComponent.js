@@ -39,119 +39,128 @@ export const Contact = () => {
         regNo: '',
         text: '',
       });
-    } catch (err) {
+    } catch (err) { 
       console.error(err.response);
       toggleModal2(!ismodalOpen2);
     }
   };
   return (
-    <Fragment>
-      <section
-        className='container mt-4'
-        id='contact'
-        style={{
-          width: '90%',
-          marginLeft: '5%',
-          background: '/assets/bg4.png',
-        }}
+    <div class="contact_us1" style={{marginTop:"20%",width:"80%"}}>
+      
+      <div class="col-12"
+      
+      id='contact'
+      style={{
+        marginLeft: '15%'
+      }}
       >
-        <div className='row'>
-          <div className='col-12 col-sm-8 offset-sm-1'>
-            <h4
-              className='large'
-              style={{
-                color: '#f7b731',
-                fontSize: '55px',
-                width: '80%',
-                fontWeight: 'bolder',
-                marginBottom: '50px',
-              }}
-            >
-              Feedback
-            </h4>
+      <div className='row'>
+        <div className='col-12 col-sm-8 offset-sm-1'>
+          <h4
+            className='large'
+            style={{
+              color: 'black',
+              fontSize: '55px',
+              width: '80%',
+              fontWeight: 'bolder',
+              marginBottom: '50px',
+              marginTop: '15%'
+            }}
+          >
+           <span style={{
+              color: '#f7b731',
+              fontSize: '55px',
+              width: '80%'}}>F</span>eedback
+          </h4>
 
-            <form className='form' onSubmit={e => onSubmit(e)}>
-              <div className='form-group'>
-                <input
-                  type='text'
-                  id='name'
-                  placeHolder='name'
-                  name='name'
-                  value={name}
-                  className='form-control'
-                  onChange={e => onChange(e)}
-                  style={{
-                    border: 'none',
-                    borderBottom: '1px solid #f1f2f6',
-                    width: '80%',
-                    marginLeft: '10%',
-                    marginBottom: '10px',
-                  }}
-                  required
-                />
-              </div>
-              <div className='form-group'>
-                <input
-                  type='text'
-                  placeHolder='registration Number'
-                  name='regNo'
-                  className='form-control'
-                  value={regNo}
-                  onChange={e => onChange(e)}
-                  style={{
-                    border: 'none',
-                    borderBottom: '1px solid #f1f2f6',
-                    width: '80%',
-                    marginLeft: '10%',
-                    marginBottom: '10px',
-                  }}
-                  required
-                />
-              </div>
-              <div className='form-group'>
-                <input
-                  type='email'
-                  placeHolder='Email'
-                  name='email'
-                  className='form-control'
-                  value={email}
-                  style={{
-                    border: 'none',
-                    borderBottom: '1px solid #f1f2f6',
-                    width: '80%',
-                    marginLeft: '10%',
-                    marginBottom: '10px',
-                  }}
-                  onChange={e => onChange(e)}
-                />
-              </div>
-              <div className='form-group'>
-                <input
-                  type='textarea'
-                  placeHolder='Type your message here'
-                  name='text'
-                  className='form-control'
-                  value={text}
-                  style={{
-                    border: 'none',
-                    borderBottom: '1px solid #f1f2f6',
-                    width: '80%',
-                    marginLeft: '10%',
-                    marginBottom: '10px',
-                  }}
-                  onChange={e => onChange(e)}
-                />
-              </div>
+          <form className='form' style={{marginBottom:'10%'}} onSubmit={e => onSubmit(e)}>
+            <div className='form-group'>
               <input
-                type='submit'
-                className='btn btn-primary'
-                value='Send'
-                style={{ marginLeft: '30% ' }}
+                type='text'
+                id='name'
+                placeHolder='name'
+                name='name'
+                value={name}
+                className='form-control'
+                onChange={e => onChange(e)}
+                style={{
+                  border: 'none',
+                  borderBottom: '1px solid #57606f',
+                  width: '60%',
+                  marginLeft: '10%',
+                  marginBottom: '10px',
+                  border:'none',
+                  background: 'transparent'
+                }}
+                required
               />
-            </form>
-          </div>
+            </div>
+            <div className='form-group'>
+              <input
+                type='text'
+                placeHolder='registration Number'
+                name='regNo'
+                className='form-control'
+                value={regNo}
+                onChange={e => onChange(e)}
+                style={{
+                  border: 'none',
+                  borderBottom: '1px solid #57606f',
+                  width: '60%',
+                  marginLeft: '10%',
+                  marginBottom: '10px',
+                  background: 'transparent'
+                }}
+                required
+              />
+            </div>
+            <div className='form-group'>
+              <input
+                type='email'
+                placeHolder='Email'
+                name='email'
+                className='form-control'
+                value={email}
+                style={{
+                  border: 'none',
+                  borderBottom: '1px solid #57606f',
+                  width: '60%',
+                  marginLeft: '10%',
+                  marginBottom: '10px',
+                  background: 'transparent'
+                }}
+                onChange={e => onChange(e)}
+              />
+            </div>
+            <div className='form-group'>
+              <input
+                type='textarea'
+                placeHolder='Type your message here'
+                name='text'
+                className='form-control'
+                value={text}
+                style={{
+                  border: 'none',
+                  borderBottom: '1px solid #57606f',
+                  width: '60%',
+                  marginLeft: '10%',
+                  marginBottom: '10px',
+                  background: 'transparent'
+                }}
+                onChange={e => onChange(e)}
+              />
+            </div>
+            <input
+              type='submit'
+              className='btn btn-primary'
+              value='Send'
+              style={{ marginLeft: '30% ' }}
+            />
+          </form>
         </div>
-      </section>
+      </div>
+        
+      </div>
 
       <Modal
         style={{}}
@@ -179,7 +188,7 @@ export const Contact = () => {
           <h5>Unable to reach server . Try again after some time</h5>
         </ModalBody>
       </Modal>
-    </Fragment>
+    </div>
   );
 };
 

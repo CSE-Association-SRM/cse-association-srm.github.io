@@ -20,13 +20,13 @@ html{
 }
 .nav-link:hover{
     padding-bottom: 0px;
-    color: blue;
+    color: black;
 }
 
 .nav-item:hover{
     color: black;
     
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid #2C3A47;
     
 }
 
@@ -62,7 +62,7 @@ span{
     .collapse{
         left: 0%;
         margin-left: 0%;
-        text-align: left;
+        text-align: center;
         height: 40;
         background-color: white;
         width:100%;
@@ -70,9 +70,17 @@ span{
         z-index: 9999;
 
     }
+    .nav-item{
+        text-align: center;
+        width: 120px;
+        margin-right: 0%;
+        letter-spacing: 2px;
+        font-family: 'Staatliches', cursive;
+        font-weight: bold;
+    }
     .nav_link{
         text-align: center;
-        margin-left: 40%;
+        margin-left: 100%;
     }
     
     .nav-link:hover{

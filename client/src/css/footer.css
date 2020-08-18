@@ -18,7 +18,7 @@ html {
 
 .footer {
   background-color: #3d3d3d;
-  margin-top: 7%;
+  margin-top: 0%;
 }
 .club_icon {
   margin-left: 18%;
@@ -35,10 +35,10 @@ html {
 .social_contact {
   margin-top: 0%;
   margin-bottom: 10%;
-  margin-left: 80%;
+  margin-left: 85%;
 }
 .social_icon {
-  margin-right: 10%;
+  margin-right: 15%;
 }
 
 li {
@@ -62,6 +62,7 @@ a:hover {
   font-weight: bolder;
   color: hsl(212, 17%, 69%);
   font-family: 'Ubuntu', sans-serif;
+  margin-left: 40%;
 }
 
 @media (max-width: 768px) {
@@ -75,7 +76,7 @@ a:hover {
   }
   .nav-list {
     width: 80%;
-    margin-top: 10%;
+    margin-top: 15%;
     margin-left: 18%;
   }
   .contact_us {
@@ -83,14 +84,13 @@ a:hover {
   }
   .social_contact {
     position: relative;
-    margin-top: 0%;
+    margin-top: 15%;
     margin-bottom: 50%;
     margin-left: 0%;
     left: 0%;
     width: 100%;
     display: flex;
     align-items: stretch;
-    padding-bottom: 80%;
   }
   .social_icon {
     margin-left: 0%;

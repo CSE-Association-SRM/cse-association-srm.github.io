@@ -9,7 +9,7 @@ const Work = props => {
   return (
     <div class='event_element '>
       <div class='alert mt-10' role='alert' style={{ paddingTop: 10 + '%' }}>
-        <h1 style={{ textAlign: 'center' }}>
+        <h1 style={{ textAlign: 'center',color:"black" }}>
           <span style={{ color: '#eb3b5a' }}>M</span>AJOR EVENTS{' '}
         </h1>
       </div>

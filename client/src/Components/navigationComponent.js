@@ -97,7 +97,7 @@ class Nav extends Component {
                   to='/home'
                   onClick={() =>
                     setTimeout(() => {
-                      window.scrollTo(0, 2000);
+                      window.scrollTo(0, 3100);
                     }, 500)
                   }
                 >

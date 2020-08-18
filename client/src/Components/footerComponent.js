@@ -40,11 +40,13 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-
-              <div class='col-5 contact_us mx-auto'>
-                {/* <h5 style={{marginTop: 5 + '%'}}>Contact us</h5>
+              {/* <div class='col-5 names'>
+                <h5 style={{marginTop: 5 + '%'}}>Contact us</h5>
                                 <h5 style={{marginTop: 0 + '%'}}>Shubham Deodhar</h5>
                                 <h5>Nisarg Bijutkar</h5>
+              </div> */}
+              <div class='col-5 contact_us mx-auto'>
+                {/* 
                             </div> */}
                 <div class='social_contact '>
                   <div class='row'>

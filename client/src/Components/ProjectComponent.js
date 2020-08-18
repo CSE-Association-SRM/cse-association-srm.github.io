@@ -46,11 +46,11 @@ const ProjectComponent = ({
             width='400'
             style={{
               marginLeft: '10%',
-              boxShadow: ' 0px 2px 20px 8px #f1f2f6',
+              
             }}
           >
-            <Card.Img src={blog.thumbnail} height='200' width='100' />
-            <Card.Body style={{ boxShadow: ' 0px 2px 20px 8px #f1f2f6' }}>
+            <Card.Img src={blog.thumbnail} height='200' width='100' style={{border: '1px solid #f1f2f6'}}/>
+            <Card.Body style={{ }}>
               <Card.Title style={{ width: '100%' }}>
                 <h5>{blog.title}</h5>
               </Card.Title>

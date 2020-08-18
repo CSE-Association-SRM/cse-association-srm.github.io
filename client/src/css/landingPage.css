@@ -1,3 +1,4 @@
+
 html{
   scroll-behavior: smooth;
 }
@@ -5,14 +6,14 @@ body{
   max-width: 100%;
   background-color: white;
   overflow-x: hidden;
+  background: url('/assets/Connected.png');
 }
 .intro_envelope{
   margin-left: 0%;
   height: 100%;
   width: 100%;
   margin-bottom: 17%;
-  background: url('/assets/bg3.png');
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: 100%;
   overflow-x: hidden;
   
@@ -20,6 +21,7 @@ body{
   
 }
 .intro_img{
+  display: none;
   position: absolute;
   top: 18%;
   left: 55%;
@@ -35,7 +37,7 @@ body{
   align-self: left;
   margin-top: 20%;
   padding-bottom: 25%;
-  margin-left: 10%;    
+  margin-left: 20%;    
 }
 
 .club_name{
@@ -58,9 +60,9 @@ body{
 }
 .aboutTeam{
   position: absolute;
-  background-color: #3d3d3d;
+  background-color: #2d3436;
   width: 100%;
-  margin-top: 0%;
+  margin-top: -1%;
   margin-left: 0%;
   overflow-x: hidden;
 }
@@ -80,8 +82,7 @@ body{
   
 }
 .event_element{
-  margin-top: 32%;
-  background: url("/assets/bg4.png");
+  margin-top: 30%;
   background-repeat: no-repeat;
   background-size: 100%;
   overflow-x: hidden;
@@ -220,9 +221,24 @@ input{
 label{
   font-weight: bold;
 }
+.contact_us{
+  margin-top: 0%;
+  width: 100%;
+  
+}
+.contact_us1{
+  margin-top: 0%;
+  width: 100%;
+  
+  padding-bottom: 0%;
+}
+
 
 @media(max-width:768px)
 {
+  body{
+    background: white;
+  }
   
   .intro_envelope{
       margin-left: 0%;

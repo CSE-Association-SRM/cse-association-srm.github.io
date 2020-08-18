@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Home from './HomeComponenet';
+import Team from './ourTeamComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchEvents } from '../redux/ActionCreators';
@@ -48,6 +49,12 @@ class Main extends Component {
             )}
           />
           <Route exact path='/projects' component={ProjectComponent} />
+          <Route
+            path='/team'
+            component={() => (
+              <Team/>
+            )}
+          />
           <Redirect to='/home' />
         </Switch>
       </>

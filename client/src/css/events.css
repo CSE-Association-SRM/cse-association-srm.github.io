@@ -4,16 +4,21 @@ html{
 body {
   background-color: white;
   overflow-x: hidden;
+  background: url('/assets/Connected.png');
+  background-repeat: no-repeat;
+}
+.tagline{
+  display: none;  
 }
 .icon_envelope {
   margin-left: 0%;
   height: 100%;
   width: 100%;
   height: 100%;
-  background: url('/assets/bg3.png');
+  
   background-repeat: no-repeat;
   background-size: 100%;
-  padding-bottom: 18%;
+  padding-bottom: 0%;
 }
 
 .event_envelope {

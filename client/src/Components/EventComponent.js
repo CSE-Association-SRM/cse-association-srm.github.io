@@ -14,8 +14,8 @@ function Liste({ event }) {
         class='event_card'
         style={{
           marginLeft: '0%',
-          boxShadow: ' 0px 2px 20px 8px #f1f2f6',
           width: '300px',
+          border:'1.5px solid #f1f2f6'
         }}
       >
         <Card.Img
@@ -207,9 +207,7 @@ class Events extends Component {
       return (
         <>
           <Nav />
-          <div className='container ' style={{ marginTop: 14 + '%' }}>
-            <h2>Check out our Amazing Events!!</h2>
-          </div>
+     
 
           <div class='icon_envelope' style={{ marginTop: 0 + '%' }}>
             <div class='row'>
@@ -221,7 +219,7 @@ class Events extends Component {
                     id='tech_event'
                     onClick={() =>
                       setTimeout(() => {
-                        window.scrollTo(0, 1500);
+                        window.scrollTo(0, 1300);
                       }, 500)
                     }
                   >
@@ -303,9 +301,7 @@ class Events extends Component {
       return (
         <>
           <Nav />
-          <div className='container ' style={{ marginTop: 14 + '%' }}>
-            <h2>Check out our Amazing Events!!</h2>
-          </div>
+          
 
           <div class='icon_envelope' style={{ marginTop: 0 + '%' }}>
             <div class='row'>
@@ -408,9 +404,7 @@ class Events extends Component {
       return (
         <>
           <Nav />
-          <div className='container ' style={{ marginTop: 12.5 + '%' }}>
-            <h2>Check out our Amazing Events!!</h2>
-          </div>
+          
 
           <div class='icon_envelope' style={{ marginTop: 0 + '%' }}>
             <div class='row'>
