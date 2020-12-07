@@ -4,7 +4,7 @@ import '../css/navbar.css'
 import Carousel from 'react-bootstrap/Carousel'
 const CArousel=()=>{
     return(
-      <Carousel pause={false} style={{marginTop: 10 +'%'}}>
+      <Carousel class="carousel_element" pause={false} style={{marginTop: 10 +'%'}}>
       <Carousel.Item>
         <img
           className="d-block w-100"

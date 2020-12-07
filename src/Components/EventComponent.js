@@ -4,19 +4,15 @@ import Footer from './footerComponent';
 import Nav from './navigationComponent';
 import {Breadcrumb,BreadcrumbItem,Card,Badge} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import '../App.css';
 import '../css/events.css'
-function RenderEvent({event}){
-    return(
-        <></>
-    );
-}
+import CArousel1 from './carouselComponent1';
+
 
 function Liste({event}){
     return(
        
-       <div class="col-md-10" style={{marginTop: 5+"%",marginLeft: 0+'%'}}>     
-        <Card style={{marginLeft: "0%",boxShadow:" 0px 2px 20px 8px #f1f2f6"}}>
+       <div class="col-md-10" style={{marginTop: 5+"%"}}>     
+        <Card class="event_card" style={{marginLeft: "0%",boxShadow:" 0px 2px 20px 8px #f1f2f6"}}>
             <Card.Img src='/assets/ultron.png' class='img-fluid d-none d-md-block align-self-center'  width='330' alt={event.name} style={{marginTop: "5%"}}/>
             <Card.Body style={{border: "none"}}>
                 <Badge color="primary" style={{backgroundColor: "#ff7f50",color: "white"}}>Fun</Badge>
@@ -31,12 +27,17 @@ function Liste({event}){
     );
 }
 
+function showTech(){
+    document.getElementById('technical_events_envelope').style.height = 20 + '%';
+}
+
 class Events extends Component{
     constructor(props){
         super(props)
         
     }
     componentDidMount(){
+        
         document.getElementById('tech_event').addEventListener('mouseover',()=>{
             document.getElementById('tech_img').src = "/assets/coding.svg";
             document.getElementById('tech_text1').style.color = "blue";
@@ -67,6 +68,9 @@ class Events extends Component{
             document.getElementById('upcoming_text1').style.color = "black";
             document.getElementById('upcoming_text2').style.color = "black";
         })
+        document.getElementById('technical_down_arrow').addEventListener('click',()=>{
+            document.getElementById('technical_events_envelope').style.height = 2000 + 'px';
+        })
     }
     render(){
     const array=this.props.events;
@@ -86,7 +90,7 @@ class Events extends Component{
         {
             return(
                 <div key={nTEvent.id} className="col-12 col-md-5 m-auto" >
-                    <RenderEvent event={nTEvent} />
+                   <Liste event={nTEvent} />
                 </div>
             );
         }
@@ -99,29 +103,13 @@ class Events extends Component{
         {
             return(
                 <div key={play.id} className="col-12 col-md-5 m-auto" >
-                    <RenderEvent event={play} />
+                    <Liste event={play} />
                 </div>
             );
         }
         else{return(<></>)}
     })
-   let count=1;
-    const latest=array.map((UpComing)=>{
-        
-        if(UpComing.upcoming && count===1 )
-        {   
-            count=count+1;
-            return(
-                <div key={UpComing.id} className="col-12 col-md-5 m-auto" >
-                    <RenderEvent event={UpComing} />
-                    
-                </div>
-            );
-        }
-        else{
-            return(<></>);
-        }
-    })
+   
     let x=1;
     const timelinex=array.map((UpComing)=>{
         
@@ -154,8 +142,8 @@ class Events extends Component{
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-2" >
-                    {/* <a href="#"><img src="/assets/techEvents.png" /></a> */}
-                    <div class="event_envelope">
+                    
+                     <div class="event_envelope">
                         <div class="event_details" id="tech_event">
                         
                             <img class="event_img" id="tech_img" src="/assets/computer.svg" height="80" />
@@ -164,8 +152,8 @@ class Events extends Component{
                     </div>
                 </div>
                 <div class="col-md-2" >
-                    {/* <a href="#"><img src="/assets/techEvents.png" /></a> */}
-                    <div class="event_envelope">
+                     
+                     <div class="event_envelope">
                         <div class="event_details" id="nontech_event">
                         
                             <img class="event_img" id="nontech_img" src="/assets/target.svg" height="80" />
@@ -174,12 +162,12 @@ class Events extends Component{
                     </div>
                 </div>
                 <div class="col-md-2" >
-                    {/* <a href="#"><img src="/assets/techEvents.png" /></a> */}
-                    <div class="event_envelope">
+                     {/*   */}
+                     <div class="event_envelope">
                         <div class="event_details" id="upcoming_event">
                         
                             <img class="event_img" id="upcoming_img" src="/assets/calendar.svg" height="80" />
-                            <h5 class="event_text" style={{textAlign: "center"}}><span id="upcoming_text1">U</span>PCOMING <br/><span id="upcoming_text2">E</span>VENTS</h5>
+                            <h5 class="event_text" ><span id="upcoming_text1">U</span>PCOMING <br/><span id="upcoming_text2">E</span>VENTS</h5>
                         </div>
                     </div>
                 </div>
@@ -187,24 +175,14 @@ class Events extends Component{
         </div>
         <div class="upcoming_events_envelope">
             <h3 style={{color: "white",paddingTop:"5%"}}>Upcoming Events</h3>
-            <div class='row' style={{marginLeft: "0%"}}>
-            <div class="timeline">
-            <div class="events">
-                <ol>
-                <ul>
-                    <li>
-                    <a href="#0" class="selected">Early Life</a>
-                    </li>
-                </ul>
-                </ol>
-            </div>
-            </div>
+            <div class="carousel_envelope">
+                <CArousel1 events={this.props.events.filter((event)=>event.upcoming)}/>
             </div>
         </div>   
-        <div class="technical_events_envelope">
-        <h3 style={{color: "black",paddingTop:"5%"}}>Technical Events</h3>
+        <div id="technical_events_envelope">
+        <h3 class="technical_event_title" style={{color: "black",paddingTop:"5%"}}>Technical Events <a href="##" id="technical_down_arrow" onclick="showTech()">V</a></h3>
         <div class='row'>
-            {technical}
+            {nonTech}
         </div>
         </div>
     

@@ -15,7 +15,7 @@ const Work=(props)=>{
             </div>
             <div class='row' style={{marginTop:5 + '%'}}>
                 <div class="col-md-1"/>
-                <div class='col-lg-5 card-element'>
+                <div class='col-md-5 card-element'>
                     <div class="flip-card" >
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -30,11 +30,11 @@ const Work=(props)=>{
                         </div>
                     </div>
                 </div>
-                <div class='col-lg-5 card-element'>
+                <div class='col-md-5 card-element'>
                     <div class="flip-card" >
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img  src="/assets/ultron.png" alt="Card image cap" height="300"/>
+                                {/* <img  src="/assets/ultron.png" alt="Card image cap" height="300" width="380"/> */}
                             </div>
                             <div class="flip-card-back">
                                 <h5 class="card-title">ULTRON</h5>
